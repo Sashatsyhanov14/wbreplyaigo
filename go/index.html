@@ -13,9 +13,6 @@
         p { font-size: 0.95rem; color: #94a3b8; margin-bottom: 25px; line-height: 1.5; }
         .btn { display: block; background: #22c55e; color: white; text-decoration: none; padding: 16px; border-radius: 14px; font-weight: bold; font-size: 1rem; transition: all 0.2s; box-shadow: 0 4px 15px rgba(34, 197, 94, 0.3); }
         .btn:active { transform: scale(0.97); background: #16a34a; }
-        .loader-bar { height: 4px; width: 100%; background: #334155; border-radius: 10px; margin-bottom: 20px; overflow: hidden; }
-        .progress { height: 100%; width: 0; background: #38bdf8; animation: progress 1.5s ease-in-out forwards; }
-        @keyframes progress { to { width: 100%; } }
     </style>
 </head>
 <body>
@@ -24,18 +21,10 @@
     <div class="brand">WBReply AI</div>
     <h1>Доступ готов</h1>
     <div class="offer">🎁 3 ДНЯ БЕСПЛАТНО</div>
-    <div class="loader-bar"><div class="progress"></div></div>
     <p>Основной интерфейс управления работает в Telegram для обеспечения максимальной скорости и безопасности ваших данных. Нажмите кнопку, чтобы войти.</p>
     <a href="tg://resolve?domain=WBReplyAIbot" class="btn">ПОЛУЧИТЬ ДОСТУП В TG</a>
 </div>
 
-<script>
-    // Пытаемся выкинуть в ТГ автоматически через 1.5 сек
-    setTimeout(function() {
-        window.location.href = "tg://resolve?domain=WBReplyAIbot";
-    }, 1500);
-</script>
-
-    <script defer src="/_vercel/insights/script.js"></script>
+<script defer src="/_vercel/insights/script.js"></script>
 </body>
 </html>
